@@ -17,6 +17,10 @@
     font-family: var(--quicksand);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--light);
     color: var(--dark);
@@ -80,6 +84,15 @@ header {
 .menu a:hover {
     background-color: var(--light);
     color: var(--dark);
+}
+
+.mobile-menu {
+    color: var(--light);
+    font-size: 1.2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
 }
 
 /* Banner */
@@ -408,3 +421,40 @@ header {
     letter-spacing: 1px;
 }
 /* end of footer */
+
+/* Media Queries */
+
+/* Tablets */
+@media only screen and (max-width: 768px) {
+    /* header */
+    .menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+    }
+
+    /* design */
+    .design-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .design-img span:last-of-type {
+        font-size: small;
+    }
+
+    .design-content .design-title {
+        font-size: 1rem;
+    }
+
+    /* blog */
+    .blog-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* footer */
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
