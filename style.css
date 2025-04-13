@@ -161,7 +161,7 @@ header {
 .design .design-title {
     text-align: center;
     margin-bottom: 1.2rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-family: var(--playfair);
 }
 
@@ -234,14 +234,177 @@ header {
     z-index: 1;
 }
 
-.design-title {
+.design-content .design-title {
     padding: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
-.design-title a {
+.design-content .design-title a {
     text-decoration: none;
     color: var(--dark);
     font-family: var(--playfair);
 }
+
+/* end of design */
+
+.blog {
+    margin: 4rem 0;
+}
+
+.blog .blog-title {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+    font-family: var(--playfair);
+}
+
+.blog .blog-text {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    font-family: var(--roboto);
+}
+
+.blog-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 1.2rem;
+    margin: 4rem 0;
+}
+
+.blog-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-img img {
+    transition: all 400ms ease-in-out;
+    height: 300px;
+    object-fit: cover;
+}
+
+.blog-img span {
+    position: absolute;
+    content: '';
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    background-color: var(--dark);
+    padding: 0.25rem 0.5rem;
+    z-index: 1;
+}
+
+.blog-content .blog-title {
+    text-align: start;
+}
+
+.blog-content .blog-title span {
+    font-size: 0.8rem;
+    font-family: var(--roboto);
+}
+
+.blog-content .blog-title h3 {
+    font-size: 1.2rem;
+    font-family: var(--playfair);
+    padding: .5rem 0;
+}
+
+.blog-content .blog-title p {
+    font-size: 0.9rem;
+    font-family: var(--roboto);
+}
+
+.blog-content .blog-title a {
+    text-decoration: none;
+    color: var(--dark);
+    font-family: var(--roboto);
+    font-size: 0.8rem;
+    background-color: #3c3c3c;
+    color: var(--light);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.2rem;
+}
+/* end of blog */
+
+/* footer */
+.footer {
+    background-color: var(--dark);
+    padding: 4rem 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 1.2rem;
+}
+
+.footer-box h3 {
+    color: var(--light);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--playfair);
+}
+
+.footer-box a {
+    color: #727ff9;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: var(--roboto);
+    text-decoration: none;
+    display: block;
+}
+
+.footer-box p {
+    color: var(--light);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: var(--roboto);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social a {
+    color: #727ff9;
+    font-size: 1.2rem;
+}
+
+.footer input {
+    background-color: var(--exLight);
+    border: none;
+    outline: none;
+    padding: 0.7rem;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+    font-family: var(--roboto);
+    font-size: 1rem;
+}
+
+.footer button {
+    background-color: #727ff9;
+    color: var(--exLight);
+    border: none;
+    outline: none;
+    padding: 0.7rem;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+    font-family: var(--roboto);
+    font-size: 1rem;
+}
+
+.footer .copyright {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    font-family: var(--roboto);
+    color: var(--light);
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+/* end of footer */
